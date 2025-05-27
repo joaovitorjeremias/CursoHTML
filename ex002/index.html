@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curso HTML & CSS</title>
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    
+    <div class="container" id="desafio009">
+      <h1 class="texto_h1">Outros Vídeos</h1>
+      <div class="videos-flex-coluna">
+        <a href="paginas-videos/pag-deyvin.html"><img src="media/deyvin.jpg" alt="Canal Mano Deyvin"></a>
+        <a href="paginas-videos/pag-montano.html"><img src="media/montano.jpg" alt="Canal Lucas Montano"></a>
+        <a href="paginas-videos/pag-html.html"><img src="media/html.jpg" alt="Curso HTML & CSS"></a>
+        <a href="paginas-videos/pag-hardware.html"><img src="media/hardware.jpg" alt="Curso Hardware"></a>
+      </div>
+    </div>
+    <div class="container" id="videos">
+      <h1 class="texto_h1">Vídeos</h1>
+      <div class="container-centralizado">
+        <h2>Video interno</h2>
+        <video src="media/video.mp4" width="500px" preload="auto" autoplay muted loop type="video/mp4"></video>
+        <br>
+        <h2>Vídeo Externo</h2>
+        <iframe width="100%" src="https://www.youtube.com/embed/YGNH71KPIes?si=ViUnjHxDDhNYKG84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="container" id="audio">
+      <h1 class="texto_h1">Reproduzindo Áudios</h1>
+      <div class="container-audio-flex-center">
+        <p>Música</p>
+        <audio src="media/nino.mp3" controls id="controle_audio" preload="metadata"></audio>
+      </div>
+    </div>
+    <div class="container" id="imagem-dinamica">
+      <h1 class="texto_h1">ImagensDinâmicas</h1>
+      <picture>
+        <source media="(max-width: 750px)" srcset="imagens-pmg/p.png" type="image/png">
+        <source media="(max-width: 950px)" srcset="imagens-pmg/m.png" type="image/png">
+        <img src="imagens-pmg/g.png" alt="Imagem Flexível">
+      </picture>
+    </div>
+    <div class="container" id="desafio06">
+      <div class="container-des-06">
+           <h1 class="texto_h1">Desafio 06</h1>
+      <h2>Tags em HTML</h2>
+      <p>Em HTML podemos inserir os seguintes elementos:</p>
+      <ul>
+        <li><abbr title="Usando a tag &lt;h&gt;">Parágrafo</abbr></li>
+        <li> <abbr title="Usando a tag &lt;h&gt; a partir de 1 até 6.">Títulos</abbr></li>
+        <li> <abbr title="Usando a tag &lt;img&gt;.">Imagens</abbr></li>
+        <li> <abbr title="Usando a tag &lt;abbr&gt;.">Abreviações</abbr></li>
+        <li> <abbr title="Usando a tag &lt;code&gt; em conjunto com a tag &lt;pre&gt;.">Código Fonte</abbr></li>
+        <li> <abbr title="Usando a tag &lt;ol&gt; junto com a tag &lt;li&gt;.">Listas númeradas</abbr></li>
+        <li> <abbr title="Usando a tag &lt;ul&gt; junto com a tag &lt;li&gt;.">Listas com demarcadores</abbr></li>
+      </ul>
+    </div>
+    </div>
+    <div class="container" id="desafio05">
+      <h1 class="texto_h1">Desafio 05</h1>
+      <h2>Quem sou eu?</h2>
+      <div class="img-container">
+        <img src="desafio05/pfp.png" id="vacalo" alt="pfp">
+      </div>
+      <p>Meu nome é <strong>João</strong>.</p>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://www.instagram.com" rel="external" target="_blank"><img src="desafio05/ig.png" alt="instagram logo" id="ig-ico"> Instagram</a></li>
+        <li><a href="https://www.facebook.com" rel="external" target="_blank"><img src="desafio05/fb.png" alt="facebook logo" id="fb-ico"> Facebook</a></li>
+      </ul>
+    </div>
+    <div class="container" id="links">
+      <h1 class="texto_h1">Trabalhando com Links</h1>
+      <h2>Links externos</h2>
+      <a href="https://www.youtube.com" target="_blank"><input type="button" value="YouTube" id="botao-yt"></a>
+      <br>
+      <a href="https://gustavoguanabara.github.io" target="_blank"><input type="button" value="GitHub" id="botao-gh"></a>
+      <h2>Links Internos</h2>
+        <a href="pag2.html"><input type="button" id="botao-pag-2" value="Página 2"></a>
+      <h2>Links para Download</h2>
+      <ul>
+        <li><a href="livros/apsicologiadascores.pdf" type="application/pdf"><input type="button" id="botao-pag-2" value="Baixar Livro"></a></li>
+        <li><a href="livros/apsicologiadascores.zip" download="apsicologiadascores.zip" type="application/zip"><input type="button" value="Baixar Livro ZIP" id="botao-pag-2"></a></li>
+      </ul>
+    </div>
+    <div class="container" id="Listas">
+      <h1 class="texto_h1">Listas</h1>
+      <h2>Listas Ordenadas</h2>
+      <ol type="I"> <!-- 1 A a I i-->
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir trabalhar</li>
+      </ol>
+      <h2>Listas Não Ordenadas</h2>
+      <ul type="circle"> <!-- disc circle square -->
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir trabalhar</li>
+      </ul>
+      <h2>Linguagens</h2>
+      <ol>
+        <li>Antigas</li>
+          <ol type="a">
+            <li>Visual Basic</li>
+            <li>Delphi</li>
+          </ol>
+        <li>Novas</li>
+          <ol type="a" start="3">
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>C#</li>
+          </ol>
+      </ol>
+      <h2>Jogos favoritos</h2>
+      <ol>
+        <li>PlayStation 2</li>
+          <ul type="square">
+            <li>Motocross</li>
+            <li>Bully</li>
+            <li>GTA - SA</li>
+          </ul>
+        <li>PlayStation 4</li>
+          <ul type="square">
+            <li>Red Dead Redemption 2</li>
+            <li>GTA V</li>
+          </ul>
+        <li>PC</li>
+          <ul type="square">
+            <li>Rocket League</li>
+            <li>Stardew Valley</li>
+          </ul>
+      </ol>
+      <h2>Lista de Definições</h2>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação da interatividade de um site.</dd>
+      </dl>
+    </div>
+    <div class="container" id="outras-formatacoes">
+      <h1 class="texto_h1">Outras formatações</h1>
+      <h2>Código Fonte / Pré Formatação</h2>
+      <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript usando a tag &lt;code&gt;</p>
+      <p>O seguinte código foi escrito usando as tags &lt;code&gt; e &lt;pre&gt;</p>
+      <PRE>
+        <code>
+    num = int(input("Digite um número: "))
+    if num % 2 == 0:
+      print(f'O número {num} é PAR)
+    else
+      print(f'O número {num} é ÍMPAR)
+        </code>
+      </PRE>
+      <h2>Citações</h2>
+      <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q> e foi citado usando a tag &lt;q&gt;</p>
+      <h2>Citações Completas</h2>
+      <p>Segundo Eva Heller em seu livro "A Psicologia das Cores":</p>
+      <blockquote cite="https://books.google.com.br/books?id=Zl1lEAAAQBAJ&hl=pt-BR&source=gbs_book_other_versions_r&redir_esc=y">
+         <q>
+           O azul é a preferida entre as cores. É a cor predileta de 46% dos homens e
+           44% das mulheres.
+           E não existe quase ninguém que não goste de azul: apenas 1% dos homens e
+           2% das mulheres citaram o azul entre as cores de que menos gostam.
+         </q>
+      </blockquote>
+      <h2>Abreviações</h2>
+      <p>Estamos estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+      <h2>Texto Invertido</h2>
+      <p><bdo dir="rtl">Estou usando o BDO</bdo></p>
+    </div>
+    <div class="container" id="formatacao">
+      <h1 class="texto_h1">Formatação</h1>
+      <h2>Negrito / Destaque</h2>
+      <p>Nessa frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt;</p>
+      <p>Nessta frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt;</p>
+      <h2>Itálico / Ênfase</h2>
+      <p>Nessa frase temos um <i>termo em itálico</i> usando a tag &lt;i&gt;</p>
+      <p>Nessa frase temos um <em>termo em ênfase</em> usando a tag &lt;em&gt;</p>
+      <h2>Texto marcado</h2>
+      <p>Nessa frase temos um <mark>termo marcado</mark> usando a tag &lt;mark&gt;</p>
+      <h2>Texto grande e pequeno</h2>
+      <p>Estamos criando um texto <big>grande</big> e um texto <small>pequeno</small></p>
+      <h2>Texto deletado</h2>
+      <p>Podemos marcar um texto como <del>excluído</del> para indicar que ele deve ser lido mas ignorado usando a tag &lt;del&gt;</p>
+      <h2>Texto Inserido</h2>
+      <p>Podemos marcar um texto como <ins>adicionado</ins> para indicado que ele foi inserido depoisusando a tag &lt;ins&gt;</p>
+      <h2>Texto sobrescrito</h2>
+      <p>Para inserir coisas do tipo x<sup>20</sup>+3 usando a tag &lt;sup&gt;</p>
+      <h2>Texto subescrito</h2>
+      <p>Para inserir coisas do tipo H<sub>2</sub>O usando a tag &lt;sub&gt;</p>
+    </div>
+    <div class="container" id="hierarquia">
+      <h1 class="texto_h1">Entendendo Portugal</h1>
+      <h2 class="texto_h2">1. Introdução</h2>
+        <h3 class="texto_h3">1.1 Justificação da temática</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe provident quis eum neque animi mollitia illo corporis dolore, a quisquam ad, nesciunt reiciendis quo culpa quas quidem. Odit, quos?</p>
+        <h3 class="texto_h3">1.2 Caráter excecional do caso de estudo</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur minus, explicabo optio, doloremque vel quisquam atque repudiandae inventore quas ad porro mollitia ea placeat fugiat iusto! Voluptates eveniet animi earum!</p>
+        <h3 class="texto_h3">1.3 Perguntas de partida</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem modi repellat eaque quo dolores, labore nam debitis magni, beatae cupiditate fugiat dicta accusamus voluptatem id amet obcaecati provident accusantium voluptas.</p>
+        <h3 class="texto_h3">1.4 metodologia de investigação</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates qui ab temporibus iure magnam deserunt consequatur sint possimus, similique atque, fugiat commodi nisi porro labore autem quae blanditiis aperiam cum!</p>
+          <h4 class="texto_h4">1.4.1 Etapas de investigação</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias repellat vero nisi in hic dolore molestias, neque fugiat amet dicta commodi aperiam eaque quas corporis voluptatibus libero quibusdam dolorum veritatis.</p>
+          <h4 class="texto_h4">1.4.2 Instrumentos de análise</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ratione adipisci voluptatum dignissimos eos fuga expedita, porro, nulla vitae, accusantium perspiciatis. Officia assumenda blanditiis sint, excepturi totam autem molestias! Voluptatum!</p>
+      <h2 class="texto_h2">2. Ordenamento do território em Portugal</h2>
+        <h3 class="texto_h3">2.1 Os instrumentos de gestão do território</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, aperiam. Velit, temporibus rerum? Rem, sapiente id. Officia, recusandae? Aliquam officiis nulla dolorum blanditiis assumenda explicabo nostrum nam fugit maxime repudiandae.</p>
+          <h4 class="texto_h4">2.1.1 Os instrumentos de planejamento</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem reprehenderit iure rerum debitis, animi modi esse repellendus dignissimos necessitatibus nobis at, possimus numquam iusto ipsa. Similique excepturi quas molestiae saepe.</p>
+          <h4 class="texto_h4">2.1.2 Os regimes territoriais especiais</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat ea dignissimos autem quisquam, dolorum iure, accusantium voluptatum ipsum ducimus consectetur sapiente unde debitis nobis et cumque laboriosam fuga eos.</p>
+    </div>
+    <div class="container" id="segundo">
+      <h1 class="texto_h1" id="h1">Imagem</h1>
+      <p class="texto_p" id="p-centrado">imagem de Júpiter</p>
+      <img src="bg.png" alt="Júpiter" class="bg-img">
+      <p class="texto_p" id="p-centrado">Imagem da Terra</p>
+      <img src="bg_2.png" alt="Terra" class="bg-img">
+      <p class="texto_p" id="p-centrado">Imagem URL Externo</p>
+      <img src="https://static8.depositphotos.com/1338574/829/i/450/depositphotos_8293024-stock-photo-the-number-4-in-gold.jpg" alt="Número 4" class="bg-img" width="250" height="250">
+    </div>
+    <div class="container" id="primeiro">
+      <h id="h1" class="texto_h">Teste</h>
+      <hr>
+      <p id="p1" class="texto_p">Primeiro doc HTML</p>
+      <hr id="hr">
+      <p id="p2" class="texto_p">Símbolos:
+        &reg;
+        &copy;
+        &trade;
+        &#x1F596;
+      </p>
+      <hr id="hr">
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
