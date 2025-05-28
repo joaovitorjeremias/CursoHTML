@@ -1,25 +1,36 @@
 body{
-  background-image: url(/ex022/imagens/wallpaper001.jpg);
+  background-image: url(imagens/wallpaper005.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 97vh;
 }
 
-div.quadrado{
-  display: inline-block;
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: lightgray;
-  width: 300px;
-  height: 300px;
+div.container{
   margin: auto;
 }
 
+div.quadrado{
+  display: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: lightgray;
+  height: 200px;
+  margin: 10px;
+  background-image: url(imagens/wallpaper003.jpg);
+}
+
 div#q1{
-  background-color: skyblue;
+  background-position: left top;
 }
 
 div#q2{
-  background-image: linear-gradient(to bottom, yellow, red);
+  background-position: left center;
 }
 
 div#q3{
-  background-image: url(/ex022/imagens/pattern003.png);
+  background-position: right bottom;
+}
+
+div#q4{
+  background-position: center center;
 }
