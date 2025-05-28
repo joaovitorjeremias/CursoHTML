@@ -1,8 +1,6 @@
 body{
-  background-image: url(imagens/wallpaper002.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
   height: 97vh;
+  background: black url(imagens/wallpaper002.jpg) center top no-repeat fixed;
   background-size: cover;
 }
 
@@ -22,4 +20,28 @@ div.container h1{
 
 div.container p{
   text-align: justify;
+}
+
+.container-2{
+  margin: auto;
+  width: 90%;
+  position: relative;
+  height: 500px;
+  padding: 10px;
+  background-color: purple;
+  background-image: url(imagens/target001.png);
+  background-size: 100% 100%;
+}
+
+.conteudo{
+  background-image: url(imagens/target001.png);
+  background-size: 100% 100%;
+  position: absolute;
+  height: 200px;
+  width: 400px;
+  background-color: yellow;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
 }
