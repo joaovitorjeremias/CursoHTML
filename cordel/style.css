@@ -65,12 +65,14 @@ section.imagem p{
   width: 45%;
   padding-left: 1em;
   margin-left: -1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 section.imagem#img1{
   background-image: url(/ex022/imagens/bgimg1.jpg);
   background-attachment: fixed;
-  background-position: left top;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -84,9 +86,10 @@ section.imagem#img2{
 }
 
 footer{
-  padding: 0.5em;
+  padding: 2em;
   background-color: black;
   text-align: center;
   color: white;
   font-family: var(--fonte1);
+  font-size: 1em;
 }
