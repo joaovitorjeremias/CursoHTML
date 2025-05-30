@@ -30,7 +30,8 @@ h1{
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: rgb(255, 238, 216);
-  width: 60%;
+  min-width: 320px;
+  max-width: 1000px;
   border-radius: 10px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26);
   margin-bottom: 20px;
