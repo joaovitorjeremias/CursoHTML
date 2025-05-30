@@ -49,9 +49,12 @@ table{
   border-collapse: collapse;
 }
 
-thead th{
-  border: 1px solid black;
+thead{
   background-color: rgba(0, 0, 0, 0.253);
+}
+
+th{
+  border: 1px solid black;
 }
 
 td{
@@ -59,12 +62,8 @@ td{
   border: solid 1px black;
 }
 
-tr:nth-child(even){
+#tab3 tr:nth-child(even){
   background-color: rgba(0, 0, 0, 0.075);
-}
-
-#tab1, #tab2{
-  display: none;
 }
 
 #tab2 table{
