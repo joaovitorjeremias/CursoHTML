@@ -4,6 +4,7 @@
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 h1{
@@ -33,14 +34,20 @@ h1{
 table caption{
   background-color: lightgray;
   padding: 10px;
-  font-size: 2vh;
+  font-size: clamp(16px, 2.5vw, 24px);
   font-weight: bolder;
-  border: 2px solid black;
+  border: 1px solid black;
+}
+
+td, th {
+  padding: 10px;
+  border: 1px solid black;
 }
 
 thead{
   position: sticky;
   top: -1px;
+  background-color: rgb(226, 226, 226);
 }
 
 table{
@@ -48,18 +55,8 @@ table{
   border-collapse: collapse;
 }
 
-thead{
-  background-color: rgb(226, 226, 226);
-}
-
-th{
+th, td{
   padding: 5px;
-  border: 2px solid black;
-}
-
-td{
-  padding: 5px;
-  border: solid 2px black;
 }
 
 #tab3 tr:nth-child(even){
@@ -87,4 +84,77 @@ td#num {
 
 tfoot{
   background-color: rgba(0, 0, 0, 0.253);
+}
+
+tfoot th{
+  border-bottom: 1px solid black;
+}
+
+#tab4 table{
+  width: 30%;
+}
+
+#tab4 td{
+  text-align: center;
+}
+
+#desafio13{
+  flex-direction: column;
+  align-items: center;
+}
+
+#desafio13 h2{
+  margin-bottom: 30px;
+}
+
+#desafio13 table{
+  margin-bottom: 30px;
+  width: 30%;
+}
+
+#desafio13 td{
+  text-align: center;
+}
+
+#desafio13 > table td{
+  background-color: rgb(240, 240, 240);
+  text-align: left;
+}
+
+#desafio13 > table th{
+  text-align: center;
+  background-color: lightgray;
+}
+
+#desafio14 table{
+  width: 500px;
+}
+
+#desafio14 table, #desafio14 thead{
+  background-color: rgb(240, 240, 240);
+}
+
+#desafio14 th, #desafio14 td{
+  border: 2px solid black;
+}
+
+#desafio14 th#title{
+  background-color: rgb(110, 110, 110);
+  color: white;
+}
+
+#desafio14 th#title-left{
+  background-color: rgb(110, 110, 110);
+  text-align: left;
+  color: white;
+}
+
+#desafio14 th#data-left{
+  text-align: left;
+}
+
+#desafio14 td#med{
+  font-weight: bolder;
+  background-color: rgb(110, 110, 110);
+  color: white;
 }

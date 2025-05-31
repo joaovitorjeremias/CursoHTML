@@ -7,65 +7,201 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <h1>Tabelas</h1>
-    <div class="div-center"> 
-      <div class="tabela" id="tab1">
+    
+    <div class="div-center">
+
+      <div class="tabela" id="desafio14">
         <table>
-          <tr>
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
-          </tr>
-          <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-          </tr>
-          <tr>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
-          </tr>
-          <tr>
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
-          </tr>
-          <tr>
-            <td>A5</td>
-            <td>B5</td>
-          </tr>
-          <tr>
-            <td>A6</td>
-          </tr>
+          <thead>
+            <tr>
+              <th rowspan="2" scope="col" id="title">Área</th>
+              <th rowspan="2" scope="col" id="title">Disciplinas</th>
+              <th colspan="2" id="title">Notas</th>
+              <th rowspan="2" scope="col" id="title">Média</th>
+            </tr>
+            <tr>
+              <th id="title">Nota 1</th>
+              <th id="title">Nota 2</th>
+            </tr>
+            <tr>
+          </thead>
+          <tbody>
+              <th scope="rowgroup" rowspan="4" id="title">Exatas</th>
+              <th scope="row" id="data-left">Matemática</th>
+              <td>0.0</td>
+              <td>0.0</td>
+              <td>0.0</td>
+            </tr>
+            <tr>
+              <th scope="row" id="data-left">Física</th>
+              <td>0.0</td>
+              <td>0.0</td>
+              <td>0.0</td>
+            </tr>
+            <tr>
+              <th scope="row" id="data-left">Química</th>
+              <td>0.0</td>
+              <td>0.0</td>
+              <td>0.0</td>
+            </tr>
+            <tr>
+              <th scope="row" id="data-left">Biologia</th>
+              <td>0.0</td>
+              <td>0.0</td>
+              <td>0.0</td>
+            </tr>
+            <tr>
+              <th scope="row" colspan="4" id="title-left">Média de Exatas</th>
+              <td id="med">0.0</td>
+            </tr>
+            <tr>
+              <th scope="rowgroup" rowspan="2" id="title">Humanas</th>
+              <th scope="row" id="data-left">História</th>
+              <td>0.0</td>
+              <td>0.0</td>
+              <td>0.0</td>
+            </tr>
+            <tr>
+              <th scope="row" id="data-left">Geografia</th>
+              <td>0.0</td>
+              <td>0.0</td>
+              <td>0.0</td>
+            </tr>
+            <tr>
+              <th scope="row" colspan="4" id="title-left">Média de Humanas</th>
+              <td id="med">0.0</td>
+            </tr>
+          </tbody>
         </table>
       </div>
-      <div class="tabela" id="tab2">
+
+      <div class="tabela" id="desafio13">
+        <h2>Desafio 2</h2>
         <table>
           <tr>
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
           </tr>
           <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
+            <th rowspan="3" scope="rowgroup">Mulheres</th>
+            <td>Ana Maria Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
           </tr>
           <tr>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
+            <td>Beatriz Souza</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
           </tr>
           <tr>
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
+            <td>Cláudia Melo</td>
+            <td>Oblicion</td>
+            <td>Matriz</td>
+            <td>Big Hero</td>
+          </tr>
+          <tr>
+            <th rowspan="3" scope="rowgroup">Homens</th>
+            <td>Brundo Mendonça</td>
+            <td>Intocáveis</td>
+            <td>Amnésia</td>
+            <td>Gladiador</td>
+          </tr>
+          <tr>
+            <td>Daniel Lourenço</td>
+            <td>Wall-E</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+          </tr>
+          <tr>
+            <td>Fabiano Mota</td>
+            <td>Star Wars</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
           </tr>
         </table>
       </div>
 
-  <h1>Tabelas Grandes</h1>
+      <div class="tabela" id="desafio13">
+        <h2>Desafio 1</h2>
+        <table>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+          </tr>
+          <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+          </tr>
+          <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+          </tr>
+          <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+          </tr>
+          <tr>
+            <td colspan="4">N</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="tabela" id="tab4">
+        <table>
+          <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+          </tr>
+          <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td rowspan="2">F</td>
+          </tr>
+          <tr>
+            <td>H</td>
+          </tr>
+          <tr>
+            <td colspan="2">L</td>
+          </tr>
+        </table>
+      </div>
 
       <div class="tabela" id="tab3">
         <table>
@@ -194,5 +330,63 @@
           </tfoot>
         </table>
       </div>
+
+      <div class="tabela" id="tab2">
+        <table>
+          <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+          </tr>
+          <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+          </tr>
+          <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+          </tr>
+          <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+          </tr>
+          <tr>
+            <td>A5</td>
+            <td>B5</td>
+          </tr>
+          <tr>
+            <td>A6</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="tabela" id="tab1">
+        <table>
+          <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+          </tr>
+          <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+          </tr>
+          <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+          </tr>
+          <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+          </tr>
+        </table>
+      </div>
+
 </body>
 </html>
