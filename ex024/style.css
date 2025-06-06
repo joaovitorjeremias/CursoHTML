@@ -1,0 +1,30 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: #393E46;
+}
+
+h1{
+  text-align: center;
+}
+
+iframe{
+  margin-top: 30px;
+  height: 400px;
+  width: 150;
+  display: grid;
+  justify-self: center;
+  border-radius: 10px;
+}
+.main-container{
+  margin: 50px auto 50px auto;
+  padding: 10px;
+  width: 80%;
+  height: auto;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
