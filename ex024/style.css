@@ -12,14 +12,29 @@ h1{
   text-align: center;
 }
 
+h2{
+  padding-top: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
 iframe{
   margin-top: 30px;
+  margin-bottom: 30px;
   height: 400px;
-  width: 150;
+  width: 450px;
   display: grid;
   justify-self: center;
   border-radius: 10px;
 }
+
 .main-container{
   margin: 50px auto 50px auto;
   padding: 10px;
