@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="geral">
+    <div class="main-box">
+      <div class="image-login">
+        <img src="images/login.png" alt="login icon">
+      </div>
+      <div class="login-title">
+        <h1>Inicie a sessão</h1>
+      </div>
+      <form autocomplete="off" action="login.php" method="post">
+        <p id="label-email"><label for="email">Email</label></p>
+        <div class="login-email">
+          <input onclick="foco_label()" onblur="blur_label()" type="text" name="email" id="email" placeholder="Digite seu e-mail">
+        </div>
+        <p id="label-senha"><label for="senha">Senha</label></p>
+        <div class="login-senha">
+          <input onfocus="foco_label()" onblur="blur_label()" type="password" name="senha" id="senha" placeholder="Digite sua senha">
+        </div>
+        <div class="login-botao">
+          <input type="submit" value="Entrar">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
