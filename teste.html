@@ -7,10 +7,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <h1>Borda Animada</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, voluptate inventore qui incidunt sequi vel tempora nesciunt repudiandae itaque nulla asperiores officiis voluptatem nobis nihil recusandae consequuntur iste sed. Nemo? lore</p>
+  <div class="glass-container">
+    <div class="glass">
+      <div class="glass-effect"></div>
+      <div class="glass-content"></div>
+    
+      <svg>
+        <filter id="glass-distortion">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="0.01 0.01"
+            numOctaves="1"
+            seed="5"
+            result="turbulence" />
+          <feGaussianBlur
+            in="turbulence"
+            stdDeviation="3"
+            result="softMap" />
+          <feDisplacementMap in="SourceGraphic" in2="softMap" scale="150"/>
+        </filter>
+      </svg>
     </div>
   </div>
 </body>
